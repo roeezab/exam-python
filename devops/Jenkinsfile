@@ -4,6 +4,7 @@
         }
         
         stage('Build Docker Image'){
+            sh "cp devops/Dockerfile ."
             customImage = docker.build('roeezab/exam-python')
         }
         
